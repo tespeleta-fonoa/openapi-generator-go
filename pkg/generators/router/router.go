@@ -216,10 +216,14 @@ func sortContext(out *templateCtx) {
 
 func setEndpoint(out *templateCtx, opts Options, method, path string, e endpoint) error {
 	if e.Group == "" {
-		if opts.FailNoGroup {
+		arr := strings.Split(path, "/")
+		if len(arr) > 1 {
+			e.Group = arr[1]
+		} else if opts.FailNoGroup {
 			return fmt.Errorf("`%s %s` does not have the `x-handler-group` value", method, path)
+		} else {
+			return nil
 		}
-		return nil
 	}
 	if e.OperationID == "" {
 		if opts.FailNoOperationID {
