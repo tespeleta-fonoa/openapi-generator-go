@@ -27,33 +27,3 @@ func (m ColumnMetadata) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetComment returns the Comment property
-func (m ColumnMetadata) GetComment() string {
-	return m.Comment
-}
-
-// SetComment sets the Comment property
-func (m *ColumnMetadata) SetComment(val string) {
-	m.Comment = val
-}
-
-// GetName returns the Name property
-func (m ColumnMetadata) GetName() string {
-	return m.Name
-}
-
-// SetName sets the Name property
-func (m *ColumnMetadata) SetName(val string) {
-	m.Name = val
-}
-
-// GetType returns the Type property
-func (m ColumnMetadata) GetType() ColumnTypeMetadata {
-	return m.Type
-}
-
-// SetType sets the Type property
-func (m *ColumnMetadata) SetType(val ColumnTypeMetadata) {
-	m.Type = val
-}

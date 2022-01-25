@@ -23,13 +23,3 @@ func (m Foo) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetFoo returns the Foo property
-func (m Foo) GetFoo() map[string]string {
-	return m.Foo
-}
-
-// SetFoo sets the Foo property
-func (m *Foo) SetFoo(val map[string]string) {
-	m.Foo = val
-}

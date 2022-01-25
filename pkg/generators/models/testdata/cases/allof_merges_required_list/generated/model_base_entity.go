@@ -26,23 +26,3 @@ func (m BaseEntity) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetId returns the Id property
-func (m BaseEntity) GetId() string {
-	return m.Id
-}
-
-// SetId sets the Id property
-func (m *BaseEntity) SetId(val string) {
-	m.Id = val
-}
-
-// GetName returns the Name property
-func (m BaseEntity) GetName() string {
-	return m.Name
-}
-
-// SetName sets the Name property
-func (m *BaseEntity) SetName(val string) {
-	m.Name = val
-}

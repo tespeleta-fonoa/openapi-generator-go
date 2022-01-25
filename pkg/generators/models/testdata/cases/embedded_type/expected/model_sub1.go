@@ -19,13 +19,3 @@ type Sub1 struct {
 func (m Sub1) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetFoo returns the Foo property
-func (m Sub1) GetFoo() string {
-	return m.Foo
-}
-
-// SetFoo sets the Foo property
-func (m *Sub1) SetFoo(val string) {
-	m.Foo = val
-}

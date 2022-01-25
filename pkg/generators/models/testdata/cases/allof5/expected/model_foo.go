@@ -22,19 +22,3 @@ type Foo struct {
 func (m Foo) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetBar returns the Bar property
-func (m Foo) GetBar() *struct {
-	ExtraField string `json:"extraField,omitempty"`
-	SubField   string `json:"subField,omitempty"`
-} {
-	return m.Bar
-}
-
-// SetBar sets the Bar property
-func (m *Foo) SetBar(val *struct {
-	ExtraField string `json:"extraField,omitempty"`
-	SubField   string `json:"subField,omitempty"`
-}) {
-	m.Bar = val
-}

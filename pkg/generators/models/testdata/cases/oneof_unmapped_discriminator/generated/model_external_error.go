@@ -23,33 +23,3 @@ type ExternalError struct {
 func (m ExternalError) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetKind returns the Kind property
-func (m ExternalError) GetKind() string {
-	return m.Kind
-}
-
-// SetKind sets the Kind property
-func (m *ExternalError) SetKind(val string) {
-	m.Kind = val
-}
-
-// GetService returns the Service property
-func (m ExternalError) GetService() string {
-	return m.Service
-}
-
-// SetService sets the Service property
-func (m *ExternalError) SetService(val string) {
-	m.Service = val
-}
-
-// GetTraceId returns the TraceId property
-func (m ExternalError) GetTraceId() string {
-	return m.TraceId
-}
-
-// SetTraceId sets the TraceId property
-func (m *ExternalError) SetTraceId(val string) {
-	m.TraceId = val
-}

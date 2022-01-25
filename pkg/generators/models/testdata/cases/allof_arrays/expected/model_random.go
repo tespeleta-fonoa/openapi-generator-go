@@ -23,13 +23,3 @@ func (m Random) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetList returns the List property
-func (m Random) GetList() []Item {
-	return m.List
-}
-
-// SetList sets the List property
-func (m *Random) SetList(val []Item) {
-	m.List = val
-}

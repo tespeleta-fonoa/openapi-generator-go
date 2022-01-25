@@ -25,23 +25,3 @@ func (m Line) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetCoordinates returns the Coordinates property
-func (m Line) GetCoordinates() [][]float32 {
-	return m.Coordinates
-}
-
-// SetCoordinates sets the Coordinates property
-func (m *Line) SetCoordinates(val [][]float32) {
-	m.Coordinates = val
-}
-
-// GetType returns the Type property
-func (m Line) GetType() string {
-	return m.Type
-}
-
-// SetType sets the Type property
-func (m *Line) SetType(val string) {
-	m.Type = val
-}

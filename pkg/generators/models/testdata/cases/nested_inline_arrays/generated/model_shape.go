@@ -25,23 +25,3 @@ func (m Shape) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetCoordinates returns the Coordinates property
-func (m Shape) GetCoordinates() []Line {
-	return m.Coordinates
-}
-
-// SetCoordinates sets the Coordinates property
-func (m *Shape) SetCoordinates(val []Line) {
-	m.Coordinates = val
-}
-
-// GetType returns the Type property
-func (m Shape) GetType() string {
-	return m.Type
-}
-
-// SetType sets the Type property
-func (m *Shape) SetType(val string) {
-	m.Type = val
-}

@@ -30,33 +30,3 @@ func (m Address) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetName returns the Name property
-func (m Address) GetName() *string {
-	return m.Name
-}
-
-// SetName sets the Name property
-func (m *Address) SetName(val *string) {
-	m.Name = val
-}
-
-// GetNumber returns the Number property
-func (m Address) GetNumber() int32 {
-	return m.Number
-}
-
-// SetNumber sets the Number property
-func (m *Address) SetNumber(val int32) {
-	m.Number = val
-}
-
-// GetStreet returns the Street property
-func (m Address) GetStreet() string {
-	return m.Street
-}
-
-// SetStreet sets the Street property
-func (m *Address) SetStreet(val string) {
-	m.Street = val
-}

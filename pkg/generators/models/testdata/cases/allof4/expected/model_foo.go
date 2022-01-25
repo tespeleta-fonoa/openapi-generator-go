@@ -23,13 +23,3 @@ func (m Foo) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetBar returns the Bar property
-func (m Foo) GetBar() *Sub {
-	return m.Bar
-}
-
-// SetBar sets the Bar property
-func (m *Foo) SetBar(val *Sub) {
-	m.Bar = val
-}

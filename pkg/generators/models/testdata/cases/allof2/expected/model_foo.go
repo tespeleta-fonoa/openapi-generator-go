@@ -21,23 +21,3 @@ type Foo struct {
 func (m Foo) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetBar returns the Bar property
-func (m Foo) GetBar() string {
-	return m.Bar
-}
-
-// SetBar sets the Bar property
-func (m *Foo) SetBar(val string) {
-	m.Bar = val
-}
-
-// GetFoo returns the Foo property
-func (m Foo) GetFoo() string {
-	return m.Foo
-}
-
-// SetFoo sets the Foo property
-func (m *Foo) SetFoo(val string) {
-	m.Foo = val
-}

@@ -143,12 +143,12 @@ func IsGeometry(data interface{}) bool {
 
 // GeometryDiscriminator implements geometryer and returns the discriminator value.
 func (m Line) GeometryDiscriminator() GeometryDiscriminator {
-	value := fmt.Sprintf("%v", m.GetType())
+	value := fmt.Sprintf("%v", m.Type)
 	return GeometryDiscriminator(value)
 }
 
 // GeometryDiscriminator implements geometryer and returns the discriminator value.
 func (m Shape) GeometryDiscriminator() GeometryDiscriminator {
-	value := fmt.Sprintf("%v", m.GetType())
+	value := fmt.Sprintf("%v", m.Type)
 	return GeometryDiscriminator(value)
 }

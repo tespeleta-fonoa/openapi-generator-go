@@ -33,33 +33,3 @@ func (m Top) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetArr returns the Arr property
-func (m Top) GetArr() []Sub1 {
-	return m.Arr
-}
-
-// SetArr sets the Arr property
-func (m *Top) SetArr(val []Sub1) {
-	m.Arr = val
-}
-
-// GetBoo returns the Boo property
-func (m Top) GetBoo() Sub3 {
-	return m.Boo
-}
-
-// SetBoo sets the Boo property
-func (m *Top) SetBoo(val Sub3) {
-	m.Boo = val
-}
-
-// GetObj returns the Obj property
-func (m Top) GetObj() Sub1 {
-	return m.Obj
-}
-
-// SetObj sets the Obj property
-func (m *Top) SetObj(val Sub1) {
-	m.Obj = val
-}

@@ -19,13 +19,3 @@ type MyOpBody struct {
 func (m MyOpBody) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetFoo returns the Foo property
-func (m MyOpBody) GetFoo() string {
-	return m.Foo
-}
-
-// SetFoo sets the Foo property
-func (m *MyOpBody) SetFoo(val string) {
-	m.Foo = val
-}

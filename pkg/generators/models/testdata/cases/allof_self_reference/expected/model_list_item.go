@@ -25,23 +25,3 @@ func (m ListItem) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetNext returns the Next property
-func (m ListItem) GetNext() *ListItem {
-	return m.Next
-}
-
-// SetNext sets the Next property
-func (m *ListItem) SetNext(val *ListItem) {
-	m.Next = val
-}
-
-// GetValue returns the Value property
-func (m ListItem) GetValue() string {
-	return m.Value
-}
-
-// SetValue sets the Value property
-func (m *ListItem) SetValue(val string) {
-	m.Value = val
-}

@@ -28,23 +28,3 @@ func (m Artist) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetLeftHand returns the LeftHand property
-func (m Artist) GetLeftHand() *AnyThing {
-	return m.LeftHand
-}
-
-// SetLeftHand sets the LeftHand property
-func (m *Artist) SetLeftHand(val *AnyThing) {
-	m.LeftHand = val
-}
-
-// GetRightHand returns the RightHand property
-func (m Artist) GetRightHand() *Color {
-	return m.RightHand
-}
-
-// SetRightHand sets the RightHand property
-func (m *Artist) SetRightHand(val *Color) {
-	m.RightHand = val
-}

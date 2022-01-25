@@ -21,23 +21,3 @@ type Foo struct {
 func (m Foo) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetMixin returns the Mixin property
-func (m Foo) GetMixin() string {
-	return m.Mixin
-}
-
-// SetMixin sets the Mixin property
-func (m *Foo) SetMixin(val string) {
-	m.Mixin = val
-}
-
-// GetSubField returns the SubField property
-func (m Foo) GetSubField() string {
-	return m.SubField
-}
-
-// SetSubField sets the SubField property
-func (m *Foo) SetSubField(val string) {
-	m.SubField = val
-}

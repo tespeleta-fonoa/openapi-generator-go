@@ -154,7 +154,7 @@ func Is{{$modelName}}(data interface{}) bool {
 {{- range $convert := .ConvertSpecs }}
 // {{$modelName}}Discriminator implements {{$interfaceName}} and returns the discriminator value.
 func (m {{$convert.TargetGoType}}) {{$modelName}}Discriminator() {{$modelName}}Discriminator {
-	value := fmt.Sprintf("%v", m.Get{{$discriminator}}())
+	value := fmt.Sprintf("%v", m.{{$discriminator}})
 	return {{$modelName}}Discriminator(value)
 }
 

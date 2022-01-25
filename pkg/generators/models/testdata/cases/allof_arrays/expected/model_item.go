@@ -19,13 +19,3 @@ type Item struct {
 func (m Item) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetFirst returns the First property
-func (m Item) GetFirst() string {
-	return m.First
-}
-
-// SetFirst sets the First property
-func (m *Item) SetFirst(val string) {
-	m.First = val
-}

@@ -31,33 +31,3 @@ func (m UserEntity) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetEmail returns the Email property
-func (m UserEntity) GetEmail() string {
-	return m.Email
-}
-
-// SetEmail sets the Email property
-func (m *UserEntity) SetEmail(val string) {
-	m.Email = val
-}
-
-// GetId returns the Id property
-func (m UserEntity) GetId() string {
-	return m.Id
-}
-
-// SetId sets the Id property
-func (m *UserEntity) SetId(val string) {
-	m.Id = val
-}
-
-// GetName returns the Name property
-func (m UserEntity) GetName() string {
-	return m.Name
-}
-
-// SetName sets the Name property
-func (m *UserEntity) SetName(val string) {
-	m.Name = val
-}

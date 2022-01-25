@@ -19,13 +19,3 @@ type Sub struct {
 func (m Sub) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetSubField returns the SubField property
-func (m Sub) GetSubField() string {
-	return m.SubField
-}
-
-// SetSubField sets the SubField property
-func (m *Sub) SetSubField(val string) {
-	m.SubField = val
-}

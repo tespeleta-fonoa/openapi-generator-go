@@ -166,18 +166,18 @@ func IsError(data interface{}) bool {
 
 // ErrorDiscriminator implements errorer and returns the discriminator value.
 func (m GenericError) ErrorDiscriminator() ErrorDiscriminator {
-	value := fmt.Sprintf("%v", m.GetKind())
+	value := fmt.Sprintf("%v", m.Kind)
 	return ErrorDiscriminator(value)
 }
 
 // ErrorDiscriminator implements errorer and returns the discriminator value.
 func (m FieldError) ErrorDiscriminator() ErrorDiscriminator {
-	value := fmt.Sprintf("%v", m.GetKind())
+	value := fmt.Sprintf("%v", m.Kind)
 	return ErrorDiscriminator(value)
 }
 
 // ErrorDiscriminator implements errorer and returns the discriminator value.
 func (m ExternalError) ErrorDiscriminator() ErrorDiscriminator {
-	value := fmt.Sprintf("%v", m.GetKind())
+	value := fmt.Sprintf("%v", m.Kind)
 	return ErrorDiscriminator(value)
 }

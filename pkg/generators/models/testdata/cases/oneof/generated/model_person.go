@@ -21,23 +21,3 @@ type Person struct {
 func (m Person) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetAge returns the Age property
-func (m Person) GetAge() int32 {
-	return m.Age
-}
-
-// SetAge sets the Age property
-func (m *Person) SetAge(val int32) {
-	m.Age = val
-}
-
-// GetName returns the Name property
-func (m Person) GetName() string {
-	return m.Name
-}
-
-// SetName sets the Name property
-func (m *Person) SetName(val string) {
-	m.Name = val
-}

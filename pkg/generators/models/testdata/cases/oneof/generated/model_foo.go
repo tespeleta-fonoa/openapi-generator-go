@@ -19,13 +19,3 @@ type Foo struct {
 func (m Foo) Validate() error {
 	return validation.Errors{}.Filter()
 }
-
-// GetBar returns the Bar property
-func (m Foo) GetBar() interface{} {
-	return m.Bar
-}
-
-// SetBar sets the Bar property
-func (m *Foo) SetBar(val interface{}) {
-	m.Bar = val
-}

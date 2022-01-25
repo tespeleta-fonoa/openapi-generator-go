@@ -27,33 +27,3 @@ func (m FieldError) Validate() error {
 		),
 	}.Filter()
 }
-
-// GetErrors returns the Errors property
-func (m FieldError) GetErrors() []ValidationError {
-	return m.Errors
-}
-
-// SetErrors sets the Errors property
-func (m *FieldError) SetErrors(val []ValidationError) {
-	m.Errors = val
-}
-
-// GetKind returns the Kind property
-func (m FieldError) GetKind() string {
-	return m.Kind
-}
-
-// SetKind sets the Kind property
-func (m *FieldError) SetKind(val string) {
-	m.Kind = val
-}
-
-// GetTraceId returns the TraceId property
-func (m FieldError) GetTraceId() string {
-	return m.TraceId
-}
-
-// SetTraceId sets the TraceId property
-func (m *FieldError) SetTraceId(val string) {
-	m.TraceId = val
-}
