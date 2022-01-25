@@ -320,7 +320,7 @@ func NewRouter(
 {{- $def := (index $paths $groupName) }}
 	{{ $groupName | firstLower}}Handler {{ $groupName | firstUpper }}Handler,
 {{- end}}
-) http.Handler {
+) chi.Router {
 
 	r := chi.NewRouter()
 {{range $groupName := .GroupsSorted }}

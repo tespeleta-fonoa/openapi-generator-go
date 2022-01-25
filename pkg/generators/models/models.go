@@ -175,8 +175,14 @@ func NewModelFromParameters(params openapi3.Parameters) (model *Model, err error
 	model = &Model{
 		Kind: Struct,
 	}
+	var seen = make(map[string]string)
 
 	for _, param := range params {
+		if _, ok := seen[param.Value.Name]; ok {
+			continue
+		}
+		seen[param.Value.Name] = param.Value.Name
+
 		spec := PropSpec{
 			Name:        tpl.ToPascalCase(param.Value.Name),
 			Description: param.Value.Description,

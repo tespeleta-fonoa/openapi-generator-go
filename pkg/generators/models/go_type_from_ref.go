@@ -82,6 +82,7 @@ func goTypeFromSpec(schemaRef *openapi3.SchemaRef) string {
 
 	case "ref":
 		propertyType = filepath.Base(schemaRef.Ref)
+		propertyType = tpl.ToPascalCase(propertyType)
 	case "":
 		propertyType = "interface{}"
 	}
